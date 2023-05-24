@@ -1,0 +1,18 @@
+Paso 1: Crear el Entorno virtual
+    -Escribir en la consola de comandos: python -m virtualenv venv
+
+Paso 2: Activar el entorno virtual cada vez que se abre Visual Studio Code
+    -Escribir este comando para activar el entorno virtual: venv\Scripts\activate
+
+Paso 3: Instalar todas las librerías y dependencias que usaremos dentro de nuestro entorno virtual
+    -Escribir el siguiente comando: pip install -r requirements.txt
+
+Paso 4: Antes de corre a Lugi, es necesario correr el Manager de Luigi, para ello hay que poner este comando en consola: 
+    -luigid
+
+Paso 5: La dirección del mismo generalmente es: http://localhost:8082/static/visualiser/index.html
+
+Paso 6: Debe crearse una base de datos llamada "tweets_database" en MySQL y estatiene que estar corriendo cuando ejecutemos nuestro programa
+
+Paso 7: El paso final es ejecutar nuestro script orquestador
+    -Poner en consola: python pipeline_luigi.py
